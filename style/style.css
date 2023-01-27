@@ -4,13 +4,20 @@
     --background-primary: #22252A;
     --background-secondary: #2D3035;
     --background-lighter: #373A3E;
+
     --color-primary: #fff;
-    --color-secondary: #B3B4B6;
+    --color-secondary: #b3b6b4;
+    --color-sucess: #0c792d;
+    --color-warn: rgb(216, 75, 10);
 
     --width-xlg: 1920px;
     --width-lg: 1024px;
     --width-md: 840px;
     --width-sm: 412px;
+
+    --border-radius-lg: 20px;
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
 }
 
 *,
@@ -25,7 +32,8 @@ body {
 
 body {
     background-color: var(--background-primary);
-    width: 100vw;
+    color: var(--color-secondary);
+    width: 100%;
     height: 100vh;
 }
 
@@ -36,9 +44,12 @@ ul li {
 
 /* --------- Layout Config ----- */
 .container {
-    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 90px;
+    padding-bottom: 60px;
 }
 
 
@@ -51,17 +62,10 @@ ul li {
     background-color: var(--background-lighter);
 }
 
-.sidebar,
-.body {
-    padding-top: 4rem;
-}
-
 .center {
     display: flex;
     justify-content: center;
 }
-
-
 
 .w-xlg {
     min-width: var(--width-xlg);
@@ -89,7 +93,7 @@ ul li {
 .list .list-item {
     margin: 0 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-md);
 }
 
 .list .list-item span {
@@ -112,7 +116,7 @@ ul li {
     color: var(--color-secondary);
 
     width: 100%;
-    min-height: 36px;
+    min-height: 68px;
 
     display: flex;
     justify-content: space-between;
@@ -122,6 +126,7 @@ ul li {
 
     position: fixed;
     top: 0;
+
     z-index: 1;
 }
 
@@ -132,7 +137,7 @@ ul li {
 
 .nav .nav-items li {
     padding: 4px 8px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-sm);
 }
 
 .nav .nav-items li:hover {
@@ -141,6 +146,7 @@ ul li {
 
 /* End Navbar */
 
+
 /* ------- Sidebar Styles -------- */
 
 .sidebar {
@@ -148,7 +154,7 @@ ul li {
     width: 360px;
     height: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -157,15 +163,64 @@ ul li {
 
 /* ------- End Sidebar ------- */
 
-/* ------- Body Style --------*/
+/* ------- Content Style --------*/
 
-.body {
-    width: 600px;
-    height: inherit;
-    background-color: rebeccapurple;
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: auto;
 }
 
-/* ------- End Body -------- */
+/* ------- End Content -------- */
+
+
+/* ----- Card Style ------ */
+
+.card {
+    background: var(--background-secondary);
+    color: var(--color-primary);
+    border-radius: var(--border-radius-lg);
+    width: 100%;
+    padding: 20px;
+}
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-header div {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.card .card-title {
+    font-size: 25px;
+}
+
+.card .card-body {
+    margin-top: 20px;
+}
+
+.card-action-btn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-action-btn:hover {
+    background-color: var(--background-lighter);
+    border-radius: var(--border-radius-md);
+}
+
+.date {
+    color: var(--color-sucess);
+}
+
+/* ----- END Card -------- */
+
 
 /* Tablet View */
 @media screen and (max-width: 767px) {}
