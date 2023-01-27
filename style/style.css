@@ -27,7 +27,21 @@ body {
     background-color: var(--background-primary);
 }
 
+.w-xlg {
+    min-width: var(--width-xlg);
+}
 
+.w-lg {
+    min-width: var(--width-lg);
+}
+
+.w-md {
+    max-width: var(--width-md);
+}
+
+.w-sm {
+    min-width: var(--width-sm);
+}
 
 .hidden {
     display: none;
