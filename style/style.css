@@ -67,3 +67,32 @@ body {
 .nav .nav-items ul li:hover {
     cursor: pointer;
 }
+
+/* Tablet View */
+@media screen and (max-width: 767px) {}
+
+/* Mobile View */
+@media screen and (max-width: 420px) {
+    body {
+        position: relative;
+    }
+
+    .nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 50px;
+
+        justify-content: center;
+    }
+
+    .nav .nav-items ul li {
+        margin: 0px .5rem;
+        padding: 10px;
+    }
+
+    .nav .nav-items ul li span {
+        display: none;
+    }
+}
