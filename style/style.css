@@ -25,7 +25,38 @@ body {
 
 body {
     background-color: var(--background-primary);
+    width: 100vw;
+    height: 100vh;
 }
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100% 100%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: var(--color-primary);
+    background-color: var(--background-lighter);
+}
+
+.sidebar,
+.body {
+    padding-top: 4rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Layout Config */
 
 .w-xlg {
     min-width: var(--width-xlg);
@@ -43,15 +74,7 @@ body {
     min-width: var(--width-sm);
 }
 
-.hidden {
-    display: none;
-}
-
-.active {
-    color: var(--color-primary);
-    background-color: var(--background-lighter);
-}
-
+/* Navbar Styles */
 .nav {
     background-color: var(--background-secondary);
     color: var(--color-secondary);
@@ -64,6 +87,9 @@ body {
     align-items: center;
 
     padding: 0 2rem;
+
+    position: fixed;
+    top: 0;
 }
 
 .nav .nav-items ul {
@@ -72,7 +98,6 @@ body {
 }
 
 .nav .nav-items ul li {
-    /* margin: 0 1rem; */
     list-style: none;
     padding: 4px 8px;
     border-radius: 5px;
@@ -81,6 +106,28 @@ body {
 .nav .nav-items ul li:hover {
     cursor: pointer;
 }
+
+/* End Navbar */
+
+/* ------- Sidebar Styles -------- */
+
+.sidebar {
+    background-color: var(--background-secondary);
+    width: 300px;
+    height: 100%;
+}
+
+/* ------- End Sidebar ------- */
+
+/* ------- Body Style --------*/
+
+.body {
+    width: 720px;
+    height: inherit;
+    background-color: rebeccapurple;
+}
+
+/* ------- End Body -------- */
 
 /* Tablet View */
 @media screen and (max-width: 767px) {}
