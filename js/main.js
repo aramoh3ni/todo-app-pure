@@ -8,6 +8,7 @@ document.querySelector(".card-action-btn").addEventListener("click", (e) => {
 
 sidebarBtn.addEventListener("click", (e) => {
   document.querySelector(".sidebar").classList.toggle("hidden");
+  document.querySelector(".sidebar").classList.toggle("fade");
 });
 
 document.querySelector(".body").addEventListener("click", () => {
