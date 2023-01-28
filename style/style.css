@@ -78,9 +78,8 @@ ul li a {
 /* --------- Layout Config ----- */
 .container {
     width: 840px;
+    border: 1px solid red;
     height: 100vh;
-    overflow: hidden;
-
     margin: 0 auto;
 }
 
@@ -294,10 +293,9 @@ ul li a {
     width: 100%;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    grid-template-columns: 1 / -1;
     gap: 1rem;
+    overflow: hidden;
 }
 
 .content-header {
@@ -315,6 +313,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     grid-row-gap: 1.3rem;
+    overflow: auto;
 }
 
 /* ------- End Content -------- */
@@ -333,7 +332,7 @@ ul li a {
 
 .card:hover {
     box-shadow: rgba(44, 44, 51, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    transform: translate(5px, -5px);
+    transform: scale(.99);
     transform-origin: 50% 50%;
 }
 
@@ -377,16 +376,32 @@ ul li a {
     display: inline;
 }
 
+.mobile-only {
+    display: none;
+}
+
 /* DESKTOP POINTS */
 
 
 /* Tablet View */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 460px;
+    }
+
+    .card .card-title {
+        font-size: 20px;
+    }
+}
 
 /* Mobile View */
 @media screen and (max-width: 420px) {
     .desktop-only {
         display: none;
+    }
+
+    .mobile-only {
+        display: inline;
     }
 
     .nav {

@@ -1,7 +1,8 @@
 "use strict";
 
 const sidebarToggleBtn = document.querySelector("#sidebar-toggle-btn");
-const cardActionBtns = document.querySelector(".card-toggle-btn");
+const cardActionBtns = document.querySelectorAll("button.card-toggle-btn");
+const cardBody = document.querySelectorAll("div.card-body");
 
 sidebarToggleBtn.addEventListener("click", () => {
   document.querySelector("#sidebar").classList.toggle("hidden");
@@ -12,12 +13,10 @@ setTimeout(() => {
   document.querySelector(".g-container").classList.add("hidden");
 }, 5000);
 
-cardActionBtns.forEach((item) => console.log(item));
+const x = document.querySelector("main").style.width;
 
-sidebarBtn.addEventListener("click", (e) => {
-  document.querySelector(".sidebar").classList.toggle("hidden");
-});
-
-document.querySelector(".body").addEventListener("click", () => {
-  document.querySelector(".sidebar").classList.toggle("hidden");
-});
+cardActionBtns.forEach((item, i) =>
+  item.addEventListener("click", (e) => {
+    cardBody[i].classList.toggle("hidden");
+  })
+);
