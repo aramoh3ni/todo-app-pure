@@ -1,5 +1,10 @@
 "use strict";
 
+// Welcom message for 5s
+setTimeout(() => {
+  document.querySelector(".g-container").classList.add("hidden");
+}, 5000);
+
 const sidebarBtn = document.querySelector(".sidebar-toggle");
 
 document.querySelector(".card-action-btn").addEventListener("click", (e) => {

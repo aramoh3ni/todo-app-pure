@@ -73,9 +73,16 @@ ul li a {
 
 /* --------- Layout Config ----- */
 .container {
-    width: 100%;
-    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: ;
     justify-content: center;
+     */
+    display: grid;
+    justify-content: center;
+
     position: relative;
     top: 90px;
     padding-bottom: 60px;
@@ -125,6 +132,7 @@ ul li a {
     margin: 0 10px;
     padding: 20px;
     border-radius: var(--border-radius-md);
+    transition: .2s ease-in-out;
 }
 
 .list .list-item span {
@@ -136,11 +144,37 @@ ul li a {
     color: var(--color-primary);
     background-color: var(--background-lighter);
     cursor: pointer;
-
+    transform: translate(2px, 0px);
 }
 
 
 /* -------- END Layout -------- */
+
+
+/* -------- Greating Style -------- */
+.g-container {
+    padding: 4rem 4rem 4rem 0;
+
+}
+
+.g-container .g-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--color-primary);
+}
+
+.g-container .g-user {
+    color: var(--color-warn);
+    font-size: 30px;
+    margin-top: .4rem;
+}
+
+.g-container .g-username:hover {
+    transform: translate(2px, 0px);
+}
+
+/* -------- End Greating -------- */
+
 
 /* Navbar Styles */
 .nav {
@@ -275,11 +309,7 @@ ul li a {
 
 
 /* Tablet View */
-@media screen and (max-width: 767px) {
-    .card {
-        width: 420px;
-    }
-}
+@media screen and (max-width: 767px) {}
 
 /* Mobile View */
 @media screen and (max-width: 420px) {
