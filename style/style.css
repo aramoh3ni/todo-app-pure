@@ -11,6 +11,11 @@
     --color-warn: rgb(216, 75, 10);
     --color-disabled: #959495;
 
+    --blue: rgb(25, 88, 223);
+    --purple: rgb(129, 21, 218);
+    --tomato: rgb(226, 46, 23);
+    --pink: rgb(208, 20, 214);
+
     --width-xlg: 1920px;
     --width-lg: 1024px;
     --width-md: 840px;
@@ -38,10 +43,33 @@ body {
     height: 100vh;
 }
 
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.tomato {
+    color: var(--tomato);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+
 ul li {
     list-style: none;
 }
 
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: inherit;
+}
 
 /* --------- Layout Config ----- */
 .container {
@@ -103,6 +131,7 @@ ul li {
     margin-right: 30px;
 }
 
+
 .list .list-item:hover {
     color: var(--color-primary);
     background-color: var(--background-lighter);
@@ -162,15 +191,8 @@ ul li {
     width: 360px;
     height: 100%;
 
-    opacity: 1;
-    transition: opacity 1s;
-
     padding-top: 100px;
     z-index: 0;
-}
-
-.sidebar .fade {
-    opacity: 0;
 }
 
 .sidebar .sidebar-title {
@@ -180,7 +202,9 @@ ul li {
     border-top: 3px solid var(--background-lighter);
 }
 
-
+.sidebar .sidebar-title i {
+    margin-right: .7rem;
+}
 
 /* ------- End Sidebar ------- */
 
@@ -209,7 +233,7 @@ ul li {
 }
 
 .card:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(44, 44, 51, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transform: translate(5px, -5px);
     transform-origin: 50% 50%;
 }
