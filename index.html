@@ -14,13 +14,15 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-items">
-                <button onclick="sidebarToggle()" class="btn icon-btn btn-md nav-item sidebar-toggle"><i
-                        class="fa fa-bars"></i></button>
-                <a href="#" class="btn btn-md active ">
+                <button onclick="sidebarToggle()" id="sidebar-toggle-btn"
+                    class="btn icon-btn btn-md nav-item sidebar-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="#" class="btn btn-md active desktop-only">
                     <i class="fa fa-th pink"></i>
                     <span>Dashboard</span>
                 </a>
-                <a class="btn btn-md">
+                <a class="btn btn-md desktop-only">
                     <i class="fa fa-tasks" aria-hidden="true"></i>
                     Collections
                 </a>
@@ -95,7 +97,7 @@
         </section>
     </main>
 
-    <div class="sidebar fade">
+    <div id="sidebar" class="sidebar">
         <div class="sidebar-title">
             <i class="fa fa-tasks" aria-hidden="true"></i>
             Collections

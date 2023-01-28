@@ -1,11 +1,11 @@
 "use strict";
 
+const sidebarToggleBtn = document.querySelector("#sidebar-toggle-btn");
 const cardActionBtns = document.querySelector(".card-toggle-btn");
-const sidebarBtn = document.querySelector(".sidebar-toggle");
 
-const sidebarToggle = (e) => {
-  document.querySelector(".sidebar").classList.toggle("hidden");
-};
+sidebarToggleBtn.addEventListener("click", () => {
+  document.querySelector("#sidebar").classList.toggle("hidden");
+});
 
 // Welcom message for 5s
 setTimeout(() => {
