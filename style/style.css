@@ -78,7 +78,6 @@ ul li a {
 /* --------- Layout Config ----- */
 .container {
     width: 840px;
-    border: 1px solid red;
     height: 100vh;
     margin: 0 auto;
 }
@@ -153,23 +152,6 @@ ul li a {
 
 .btn:hover {
     background-color: var(--background-lighter);
-}
-
-
-.w-xlg {
-    min-width: var(--width-xlg);
-}
-
-.w-lg {
-    min-width: var(--width-lg);
-}
-
-.w-md {
-    max-width: var(--width-md);
-}
-
-.w-sm {
-    min-width: var(--width-sm);
 }
 
 
@@ -325,7 +307,7 @@ ul li a {
     background: var(--background-secondary);
     color: var(--color-primary);
     border-radius: var(--border-radius-lg);
-    width: 100%;
+    width: 98%;
     padding: 20px;
     transition: transform 0.25s ease-out;
 }
@@ -424,6 +406,9 @@ ul li a {
 
 }
 
+
+/* -------- CHECKBOX DESIGN -------- */
+
 input[type="checkbox"] {
     display: grid;
     place-content: center;
@@ -471,3 +456,17 @@ input[type="checkbox"]:disabled {
     color: var(--color-disabled);
     cursor: not-allowed;
 }
+
+/* -------- END CHECKBOX -------- */
+
+/* -------- SCROLLBAR DESIGN  --------*/
+*::-webkit-scrollbar {
+    width: .7em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--background-lighter);
+    border-radius: 10px;
+}
+
+/* ------- END SCROLLBAR -------- */
