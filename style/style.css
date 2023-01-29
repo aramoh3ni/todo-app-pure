@@ -452,6 +452,7 @@ ul li a {
     .nav {
         min-height: 50px;
         padding: 0 0;
+        margin: 0px 10px;
     }
 
     .container {
