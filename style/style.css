@@ -100,7 +100,7 @@ ul li a {
 
 .btn {
     border-radius: var(--border-radius-sm);
-
+    background: none;
     color: var(--color-primary);
     padding: 5px 10px;
     cursor: pointer;
@@ -110,6 +110,10 @@ ul li a {
 
     display: flex;
     align-items: center;
+}
+
+.btn.btn-outline {
+    border: 2px solid var(--background-lighter);
 }
 
 .btn i {
@@ -181,6 +185,20 @@ ul li a {
     transform: translate(2px, 0px);
 }
 
+.hidden {
+    display: none;
+}
+
+.active {
+    color: var(--color-primary);
+    background-color: var(--background-lighter);
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 /* -------- END Layout -------- */
 
@@ -352,6 +370,15 @@ ul li a {
 }
 
 /* ----- END Card -------- */
+
+/* ----- TAB Contoller Desing */
+
+.tab {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ----- END TAB Controler */
 
 /* DESKTOP ONLYE */
 .desktop-only {
