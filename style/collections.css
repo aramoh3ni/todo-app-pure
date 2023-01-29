@@ -376,13 +376,17 @@ ul li a {
 
 
 /* Tablet View */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
     .container {
         width: 460px;
     }
 
     .card .card-title {
         font-size: 20px;
+    }
+
+    .content-body {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -401,6 +405,10 @@ ul li a {
         padding: 0 0;
     }
 
+    .card {
+        height: 120px;
+    }
+
     .container {
         width: 360px;
     }
@@ -413,7 +421,13 @@ ul li a {
         margin-top: 20px;
     }
 
+    .content-body {
+        grid-template-columns: 1fr;
+    }
 
+    .card .card-header .card-icon i {
+        font-size: 15px;
+    }
 }
 
 /* -------- SCROLLBAR DESIGN  --------*/
