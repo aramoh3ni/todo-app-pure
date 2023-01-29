@@ -1,12 +1,20 @@
 "use strict";
 
 const btnEffect = document.querySelectorAll(".btn");
+
+const avatarToggleBtn = document.querySelector("#avatar-btn");
+const avatarMenu = document.querySelector("#avatar-menu");
+
 const sidebarToggleBtn = document.querySelector("#sidebar-toggle-btn");
 const cardOptionBtns = document.querySelectorAll("button.card-option-btn");
 const cardToggleBtns = document.querySelectorAll("button.card-toggle-btn");
 const cardActionIcons = document.querySelectorAll("button.card-toggle-btn");
 const cardBody = document.querySelectorAll("div.card-body");
 const cardOptions = document.querySelectorAll("div.card-options");
+
+avatarToggleBtn.addEventListener("click", () => {
+  avatarMenu.classList.toggle("hidden");
+});
 
 sidebarToggleBtn.addEventListener("click", () => {
   document.querySelector("#sidebar").classList.toggle("hidden");

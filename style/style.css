@@ -260,6 +260,33 @@ ul li a {
 /* End Navbar */
 
 
+/* ----- Toggle Menu Style ------- */
+
+.toggle-container {
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    background-color: var(--background-secondary);
+    min-width: 200px;
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 0;
+}
+
+
+.toggle-menu .list {
+    padding: 0;
+}
+
+.toggle-menu .list .list-item {
+    margin: 0;
+    padding: 10px;
+}
+
+/* ----- END Toggle Menu --------- */
+
 /* ------- Sidebar Styles -------- */
 
 .sidebar {
