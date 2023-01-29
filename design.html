@@ -17,7 +17,7 @@
                 <button id="sidebar-toggle-btn" class="btn icon-btn btn-md nav-item sidebar-toggle">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a href="#" class="btn btn-md active desktop-only">
+                <a href="./index.html" class="btn btn-md desktop-only">
                     <i class="fa fa-th pink"></i>
                     <span>Dashboard</span>
                 </a>
@@ -40,17 +40,67 @@
     <main class="container">
         <section class="content">
             <div class="content-header">
-                <h2>Dashboard</h2>
+                <div class="center">
+                    <button class="btn btn-sm active">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <h2>Design</h2>
+                </div>
                 <button class="btn icon-btn btn-sm">
                     <i class="fa fa-ellipsis-v"></i>
                 </button>
             </div>
 
-            <div class="g-container">
-                <h1 class="g-title">Hey! 🖐️, Welcome Back</h1>
-                <h2 class="g-user">Mr. Alireza Mohseni</h2>
-            </div>
+            <form action="#" method="post">
+                <div class="form-control center">
+                    <button class="form-button btn btn-md" type="submit">+</button>
+                    <input type="text" name="task-title" id="task-title" placeholder="New Task">
+                </div>
+            </form>
 
+            <div class="content-body">
+                <h4>Tasks - 6</h4>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <input type="checkbox" name="checkbox">
+                            <h4 class="card-title">Lorem ipsum dolor sit</h4>
+                        </div>
+                        <button class="btn icon-btn btn-sm card-toggle-btn"><i class="fa fa-angle-up"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> Wednesday, Dec 10</span>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <input type="checkbox" name="checkbox">
+                            <h4 class="card-title">Lorem ipsum dolor sit</h4>
+                        </div>
+                        <button class="btn icon-btn btn-sm card-toggle-btn"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="card-body hidden">
+                        <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> Wednesday, Dec 10</span>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <input type="checkbox" name="checkbox">
+                            <h4 class="card-title">Lorem ipsum dolor sit</h4>
+                        </div>
+                        <button class="btn icon-btn btn-sm card-toggle-btn"><i class="fa fa-angle-up"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> Wednesday, Dec 10</span>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+
+            </div>
         </section>
     </main>
 
@@ -67,14 +117,12 @@
             Collections
         </div>
         <ul class="list">
-            <a href="./design.html">
-                <li class="list-item">
-                    <span class="list-icon">
-                        <i class="fa fa-circle purple" aria-hidden="true"></i></span>
-                    Design
-                </li>
-            </a>
             <li class="list-item active">
+                <span class="list-icon">
+                    <i class="fa fa-circle purple" aria-hidden="true"></i></span>
+                Design
+            </li>
+            <li class="list-item ">
                 <span class="list-icon"><i class="fa fa-circle tomato" aria-hidden="true"></i></span>WorkOut
             </li>
             <li class="list-item">
