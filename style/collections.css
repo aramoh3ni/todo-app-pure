@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-primary: #22252A;
+    --background-secondary: #2D3035;
+    --background-lighter: #373A3E;
+
+    --color-primary: #fff;
+    --color-secondary: rgba(167, 177, 191, 1);
+    --color-sucess: #0c792d;
+    --color-warn: rgb(216, 75, 10);
+    --color-disabled: #959495;
+
+    --blue: rgb(25, 88, 223);
+    --purple: rgb(129, 21, 218);
+    --tomato: rgb(226, 46, 23);
+    --pink: rgb(208, 20, 214);
+
+    --width-xlg: 1920px;
+    --width-lg: 1024px;
+    --width-md: 840px;
+    --width-sm: 412px;
+
+    --border-radius-lg: 1rem;
+    --border-radius-md: .75rem;
+    --border-radius-sm: .45rem;
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--color-secondary);
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.tomato {
+    color: var(--tomato);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.delete {
+    color: var(--tomato);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: inherit;
+}
+
+/* --------- Layout Config ----- */
+.container {
+    width: 840px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: var(--color-primary);
+    background-color: var(--background-lighter);
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: var(--border-radius-sm);
+
+    color: var(--color-primary);
+    padding: 5px 10px;
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn-sm {
+    padding: .75rem;
+}
+
+.btn-md {
+    padding: 1rem;
+}
+
+.btn-lg {
+    padding: 1.2rem;
+}
+
+
+.icon-btn {
+    background: none;
+}
+
+.icon-btn i {
+    margin-right: 0;
+}
+
+.btn-sm .icon-btn i {
+    font-size: 10px;
+}
+
+.btn-md .icon-btn i {
+    font-size: 15px;
+}
+
+.btn-lg .icon-btn i {
+    font-size: 17px;
+}
+
+
+.btn:hover {
+    background-color: var(--background-lighter);
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-bottom: 10px;
+}
+
+.list .list-item {
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    transition: .2s ease-in-out;
+}
+
+.list .list-item span {
+    margin-right: 30px;
+}
+
+
+.list .list-item:hover {
+    color: var(--color-primary);
+    background-color: var(--background-lighter);
+    cursor: pointer;
+    transform: translate(2px, 0px);
+}
+
+
+/* -------- END Layout -------- */
+
+
+/* Navbar Styles */
+.nav {
+    background-color: var(--background-secondary);
+    color: var(--color-secondary);
+
+    width: 100%;
+    min-height: 68px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nav .nav-items {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+/* End Navbar */
+
+
+/* ------- Sidebar Styles -------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-secondary);
+    width: 360px;
+    height: 100%;
+
+    padding-top: 100px;
+    z-index: 0;
+}
+
+.sidebar .sidebar-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1rem;
+    border-top: 3px solid var(--background-lighter);
+    color: var(--color-primary);
+}
+
+.sidebar .sidebar-title i {
+    margin-right: .7rem;
+}
+
+/* ------- End Sidebar ------- */
+
+/* ------- Content Style --------*/
+
+.content {
+    padding: 5rem 0 1rem 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.content-header {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header h2 {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.content-body {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 1.3rem;
+}
+
+/* ------- End Content -------- */
+
+
+/* ----- Card Style ------ */
+
+.card {
+    background: var(--background-secondary);
+    color: var(--color-primary);
+    border-radius: var(--border-radius-lg);
+    height: 180px;
+    padding: 20px;
+    transition: transform 0.25s ease-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: rgba(44, 44, 51, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(.99);
+    transform-origin: 50% 50%;
+}
+
+.card-body,
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-header .card-icon {
+    background-color: var(--blue);
+    width: fit-content;
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+}
+
+.card .card-header .card-icon i {
+    font-size: 25px;
+}
+
+.card .card-title {
+    font-size: 25px;
+}
+
+.card .card-task {
+    margin-top: 10px;
+}
+
+.card-options {
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius-md);
+
+    position: absolute;
+    right: 0;
+    min-width: 100px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.card-options .list {
+    padding: 0;
+}
+
+.card-options .list .list-item {
+    margin: 0;
+    padding: 10px;
+}
+
+/* ----- END Card -------- */
+
+/* DESKTOP ONLYE */
+.desktop-only {
+    display: inline;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* DESKTOP POINTS */
+
+
+/* Tablet View */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 460px;
+    }
+
+    .card .card-title {
+        font-size: 20px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 420px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline;
+    }
+
+    .nav {
+        min-height: 50px;
+        padding: 0 0;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    .card .card-title {
+        font-size: 18px;
+    }
+
+    .card .card-body {
+        margin-top: 20px;
+    }
+
+
+}
+
+/* -------- SCROLLBAR DESIGN  --------*/
+*::-webkit-scrollbar {
+    width: .7em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--background-lighter);
+    border-radius: 10px;
+}
+
+/* ------- END SCROLLBAR -------- */

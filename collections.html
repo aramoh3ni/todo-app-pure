@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/collections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-items">
+                <button id="sidebar-toggle-btn" class="btn icon-btn btn-md nav-item sidebar-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="./index.html" class="btn btn-md desktop-only">
+                    <i class="fa fa-th"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="btn btn-md active desktop-only">
+                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                    Collections
+                </a>
+            </div>
+            <div class="nav-items">
+                <button class="btn icon-btn btn-md">
+                    <i class="fa fa-plus pink"></i>
+                </button>
+                <button class="btn icon-btn btn-md avatar">
+                    <i class="fa fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <div class="content-header">
+                <h2>Collections</h2>
+                <button class="btn icon-btn btn-sm">
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+            </div>
+
+            <div class="content-body">
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="cart-action">
+                            <button class="btn icon-btn btn-sm card-option-btn">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <div class="card-options hidden">
+                                <ul class="list">
+                                    <li class="list-item">Add to Favorite</li>
+                                    <li class="list-item delete">Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Workout</h1>
+                        <p class="card-task">6/10 Done</p>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                        <div class="cart-action">
+                            <button class="btn icon-btn btn-sm card-option-btn">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <div class="card-options hidden">
+                                <ul class="list">
+                                    <li class="list-item">Add to Favorite</li>
+                                    <li class="list-item delete">Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Design</h1>
+                        <p class="card-task">1/2 Done</p>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="cart-action">
+                            <button class="btn icon-btn btn-sm card-option-btn">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <div class="card-options hidden">
+                                <ul class="list">
+                                    <li class="list-item">Add to Favorite</li>
+                                    <li class="list-item delete">Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Design</h1>
+                        <p class="card-task">1/2 Done</p>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="cart-action">
+                            <button class="btn icon-btn btn-sm card-option-btn">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <div class="card-options hidden">
+                                <ul class="list">
+                                    <li class="list-item">Add to Favorite</li>
+                                    <li class="list-item delete">Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Design</h1>
+                        <p class="card-task">1/2 Done</p>
+                    </div>
+                </a>
+                <a href="#" class="card card-empty">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="cart-action">
+                            <button class="btn icon-btn btn-sm card-option-btn">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <div class="card-options hidden">
+                                <ul class="list">
+                                    <li class="list-item">Add to Favorite</li>
+                                    <li class="list-item delete">Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Design</h1>
+                        <p class="card-task">1/2 Done</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="sidebar" class="sidebar hidden">
+        <ul class="list mobile-only">
+            <li class="list-item">
+                <span class="list-icon">
+                    <i class="fa fa-th" aria-hidden="true"></i></span>
+                Dashboard
+            </li>
+        </ul>
+        <div class="sidebar-title">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Collections
+        </div>
+        <ul class="list">
+            <li class="list-item">
+                <span class="list-icon">
+                    <i class="fa fa-circle purple" aria-hidden="true"></i></span>
+                Design
+            </li>
+            <li class="list-item active">
+                <span class="list-icon"><i class="fa fa-circle tomato" aria-hidden="true"></i></span>WorkOut
+            </li>
+            <li class="list-item">
+                <a href="#">
+                    <span class="list-icon"><i class="fa fa-circle pink" aria-hidden="true"></i>
+                    </span>School
+                </a>
+            </li>
+            <li class="list-item"><span class="list-icon ">
+                    <i class="fa fa-circle purple" aria-hidden="true"></i></span>University</li>
+        </ul>
+
+        <div class="sidebar-title"><i class="fa fa-cog"></i> Settings</div>
+        <ul class="list">
+            <li class="list-item"><span class="list-icon"><i class="fa fa-cog"></i></span>Setting</li>
+            <li class="list-item"><span class="list-icon"><i class="fa fa-adjust"></i></span>Mode</li>
+        </ul>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
