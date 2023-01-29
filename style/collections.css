@@ -351,6 +351,17 @@ ul li a {
     padding: 10px;
 }
 
+.card.card-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.card-empty i {
+    font-size: 40px;
+    color: var(--background-lighter);
+}
+
 /* ----- END Card -------- */
 
 /* ----- TAB Contoller Desing */
