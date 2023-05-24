@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-items">
+                <button id="sidebar-toggle-btn" class="btn icon-btn btn-md nav-item sidebar-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="#" class="btn btn-md active desktop-only">
+                    <i class="fa fa-th pink"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="./collections.html" class="btn btn-md desktop-only">
+                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                    Collections
+                </a>
+            </div>
+            <div class="nav-items">
+                <button class="btn icon-btn btn-md">
+                    <i class="fa fa-plus pink"></i>
+                </button>
+                <button id="avatar-btn" class="btn icon-btn btn-md avatar-action-btn">
+                    <i class="fa fa-user-circle"></i>
+                </button>
+                <div class="toggle-container hidden" id="avatar-menu">
+                    <div class="toggle-options">
+                        <ul class="list">
+                            <li class="list-item">Profile</li>
+                            <li class="list-item">Sign-up</li>
+                            <li class="list-item">Sign-in</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content center">
+            <div class="content-title">
+                <h1>
+                    <span class="collerd">NOTE-it</span><br />
+                    Make's your day simple.
+                </h1>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <button class="btn btn-icon btn-sm">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    Create New Account
+                </div>
+
+                <div class="card-body">
+                    <form action="#" method="post">
+                        <div class="form-control center">
+                            <span class="form-input-icon">
+                                <i class="fa fa-plus"></i>
+                            </span>
+                            <input type="text" name="task-title" id="firstname" placeholder="Firstname">
+                        </div>
+                        <div class="form-control center">
+                            <span class="form-input-icon" type="submit">+</span>
+                            <input type="text" name="task-title" id="lastname" placeholder="Lastname">
+                        </div>
+                        <div class="form-control center">
+                            <span class="form-input-icon" type="submit">+</span>
+                            <input type="text" name="task-title" id="email" placeholder="your-email@something.com">
+                        </div>
+                        <div class="form-control center">
+                            <span class="form-input-icon" type="submit">+</span>
+                            <input type="text" name="task-title" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-control center">
+                            <span class="form-input-icon" type="submit">+</span>
+                            <input type="text" name="task-title" id="re-password" placeholder="Confirm Your Password">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-footer">
+                    <h3>Create Your Accout.</h3>
+                    <button class="btn btn-md active">Create</button>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <div id="sidebar" class="sidebar hidden">
+        <ul class="list mobile-only">
+            <li class="list-item">
+                <span class="list-icon">
+                    <i class="fa fa-th" aria-hidden="true"></i></span>
+                Dashboard
+            </li>
+        </ul>
+        <div class="sidebar-title">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Collections
+        </div>
+        <ul class="list">
+            <a href="./design.html">
+                <li class="list-item">
+                    <span class="list-icon">
+                        <i class="fa fa-circle purple" aria-hidden="true"></i></span>
+                    Design
+                </li>
+            </a>
+            <li class="list-item active">
+                <span class="list-icon"><i class="fa fa-circle tomato" aria-hidden="true"></i></span>WorkOut
+            </li>
+            <li class="list-item">
+                <a href="#">
+                    <span class="list-icon"><i class="fa fa-circle pink" aria-hidden="true"></i>
+                    </span>School
+                </a>
+            </li>
+            <li class="list-item"><span class="list-icon ">
+                    <i class="fa fa-circle purple" aria-hidden="true"></i></span>University</li>
+        </ul>
+
+        <div class="sidebar-title"><i class="fa fa-cog"></i> Settings</div>
+        <ul class="list">
+            <li class="list-item"><span class="list-icon"><i class="fa fa-cog"></i></span>Setting</li>
+            <li class="list-item"><span class="list-icon"><i class="fa fa-adjust"></i></span>Mode</li>
+        </ul>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
